@@ -12,7 +12,7 @@ Only use this with copyes of your stuff, if something goes wrong there are no go
 
 
 Put your files or whole mod/modpack/game in the "Minetest old call update" folder (created in first run).
-
+As standard you will get a warning about using unknown vbs script, but just ignoe it and run.
 
 REPLACE		WITH<br>
 .env:		minetest.<br>
