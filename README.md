@@ -17,7 +17,7 @@ Only use this with copyes of your stuff, if something goes wrong there are no go
 Put your files or whole mod/modpack/game in the "Minetest old call update" folder (created in first run).
 
 
-REPLACE		WITH
+REPLACE		WITH<br>
 .env:		minetest.
 getpos		get_pos
 setpos		set_pos
