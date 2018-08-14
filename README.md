@@ -18,16 +18,16 @@ Put your files or whole mod/modpack/game in the "Minetest old call update" folde
 
 
 REPLACE		WITH<br>
-.env:		minetest.
-getpos		get_pos
-setpos		set_pos
-moveto		move_to
-setvelocity	set_velocity
-getvelocity	get_velocity
-setacceleration	set_acceleration
-getacceleration	get_acceleration
-setyaw		set_yaw
-getyaw		get_yaw
-settexturemod	set_texture_mod
-setsprite		set_sprite
-minetest.setting_	minetest.settings:
+.env:		minetest.<br>
+getpos		get_pos<br>
+setpos		set_pos<br>
+moveto		move_to<br>
+setvelocity	set_velocity<br>
+getvelocity	get_velocity<br>
+setacceleration	set_acceleration<br>
+getacceleration	get_acceleration<br>
+setyaw		set_yaw<br>
+getyaw		get_yaw<br>
+settexturemod	set_texture_mod<br>
+setsprite		set_sprite<br>
+minetest.setting_	minetest.settings:<br>
