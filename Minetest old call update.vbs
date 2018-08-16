@@ -44,7 +44,7 @@ else
 			text=Replace(text,"(","")
 			text=Replace(text,":","")
 			logtext=""
-			if CreateObject("Scripting.FileSystemObject").FileExists("log.txt") then
+			if sf.FileExists("log.txt") then
 				logtext=sf.OpenTextFile("log.txt",1).readall
 			end if
 			sf.CreateTextFile("log.txt").writeline(logtext & vbCrLf & text)
