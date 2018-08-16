@@ -23,7 +23,7 @@ sub file(a)
 	cfiles=cfiles+1
 	changes=""
 	f2=f
-	for i=0 to (ubound(rep)+1)/2 step 2
+	for i=0 to ubound(rep) step 2
 		if InStr(f,rep(i))>0 then
 			changes=changes & rep(i) & "  "
 			f2=Replace(f2,rep(i),rep(i+1))
@@ -44,7 +44,7 @@ else
 			text=Replace(text,"(","")
 			text=Replace(text,":","")
 			logtext=""
-			if sf.FileExists("log.txt") then
+			if CreateObject("Scripting.FileSystemObject").FileExists("log.txt") then
 				logtext=sf.OpenTextFile("log.txt",1).readall
 			end if
 			sf.CreateTextFile("log.txt").writeline(logtext & vbCrLf & text)
