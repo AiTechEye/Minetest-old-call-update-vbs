@@ -1,11 +1,11 @@
-'Version 2
+'Version 3
 
 set sf=CreateObject("Scripting.FileSystemObject")
 pp=sf.GetAbsolutePathName("Minetest old call update")
 cfolders=0
 cfiles=0
 text=""
-rep = Array(".env:",	"minetest.",	":getpos(",":get_pos(",	":setpos(",":set_pos(",	":moveto(",":move_to(",	":setvelocity(",":set_velocity(",	":getvelocity(",":get_velocity(",	":setacceleration(",":set_acceleration(",		":getacceleration(",":get_acceleration(",	":setyaw(",":set_yaw(",	":getyaw(",":get_yaw(",	":settexturemod(",":set_texture_mod(",	":setsprite(",":set_sprite(",	"minetest.setting_","minetest.settings:")
+rep = Array(".env:",	"minetest.",	":getpos(",":get_pos(",	":setpos(",":set_pos(",	":moveto(",":move_to(",	":setvelocity(",":set_velocity(",	":getvelocity(",":get_velocity(",	":setacceleration(",":set_acceleration(",		":getacceleration(",":get_acceleration(",	":setyaw(",":set_yaw(",	":getyaw(",":get_yaw(",	":settexturemod(",":set_texture_mod(",	":setsprite(",":set_sprite(",	"minetest.setting_setbool(","minetest.settings:set_bool("	,"minetest.setting_getbool(","minetest.settings:get_bool("	,"minetest.setting_get(","minetest.settings:get("	,"minetest.setting_set(","minetest.settings:set("	,"minetest.setting_save(","minetest.settings:write("	,"minetest.setting_get_pos(","minetest.settings:get_pos("	,"minetest.setting_set_pos(","minetest.settings:set_pos("	,":get2dMap(",":get_2d_map("	,":get3dMap(",":get_3d_map("	,":get2dMap_flat(",":get_2d_map_flat("	,":get3dMap_flat(",":get_3d_map_flat("	,":calc2dMap(",":calc_2d_map("	,":calc3dMap(",":calc_3d_map("	,":get2d(",":get_2d("	,":get3d(",":get_3d("	,":getMapSlice(",":get_map_slice(")
 
 sub folder(p)
 	for each fo in sf.GetFolder(p).subfolders
