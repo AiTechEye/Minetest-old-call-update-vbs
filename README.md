@@ -1,4 +1,4 @@
-# Minetest old call update V2
+# Minetest old call update V3
 ## This is not a minetest mod
 **1: USE OF YOUR OWN RISK**
 **2: THE SCRIPT/APPLICATION IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.**
@@ -7,6 +7,8 @@
 
 **This script/application should work fine with windows 7 and newer, unsure about older os.**
 
+***Only use this app if you know what you are doing, some calls eg "get_2d_map_flat" isn't supported in mt 0.4.16 and older
+
 This script will simply replace all of this old calls in lua-files, in all sub folders and creating a log about what it finds.
 Only use this with copyes of your stuff, if something goes wrong there are no going back.
 
@@ -14,17 +16,36 @@ Only use this with copyes of your stuff, if something goes wrong there are no go
 Put your files or whole mod/modpack/game in the "Minetest old call update" folder (created in first run).
 As standard you will get a warning about using unknown vbs script, but just ignore it and run.
 
-REPLACE		WITH<br>
-.env:		minetest.<br>
-getpos		get_pos<br>
-setpos		set_pos<br>
-moveto		move_to<br>
-setvelocity	set_velocity<br>
-getvelocity	get_velocity<br>
-setacceleration	set_acceleration<br>
-getacceleration	get_acceleration<br>
-setyaw		set_yaw<br>
-getyaw		get_yaw<br>
-settexturemod	set_texture_mod<br>
-setsprite		set_sprite<br>
-minetest.setting_	minetest.settings:<br>
+|REPLACE|		WITH|
+|-------|-------|
+|.env:|		minetest.
+|getpos|		get_pos
+|setpos|		set_pos
+|moveto|	move_to
+|setvelocity|	set_velocity
+|getvelocity|	get_velocity
+|setacceleration|	set_acceleration
+|getacceleration|	get_acceleration
+|setyaw|		set_yaw
+|getyaw|		get_yaw
+|settexturemod|	set_texture_mod
+|setsprite|	set_sprite
+|setting_setbool|	settings:set_bool
+|setting_getbool|	settings:get_bool
+|setting_get|	settings:get
+|setting_set|	settings:set
+|setting_save|	settings:write
+|setting_get_pos|	settings:get_pos
+|setting_set_pos|	settings:set_pos
+|get2dMap|	get_2d_map
+|get3dMap|	get_3d_map
+|get2dMap_flat|	get_2d_map_flat
+|get3dMap_flat|	get_3d_map_flat
+|calc2dMap|	calc_2d_map
+|calc3dMap|	calc_3d_map
+|get2d|		get_2d
+|get3d|		get_3d
+|getMapSlice|	get_map_slice
+
+
+
