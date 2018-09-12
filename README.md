@@ -1,21 +1,21 @@
-# Minetest old lua call update V3
-## This is not a minetest mod
-**1: USE OF YOUR OWN RISK**
-**2: THE SCRIPT/APPLICATION IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.**
-**3: I (AiTechEye) DO NOT TAKE ANY RESPONSIBILITY FOR ANY DAMAGES AND ARE NOT LIABLE FOR ANY KINDS OF DAMAGES.**
-**4 the code are CC0**
+# Minetest old lua call update V3<br>
+## This is not a minetest mod<br>
+**1: USE OF YOUR OWN RISK**<br>
+**2: THE SCRIPT/APPLICATION IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.**<br>
+**3: I (AiTechEye) DO NOT TAKE ANY RESPONSIBILITY FOR ANY DAMAGES AND ARE NOT LIABLE FOR ANY KINDS OF DAMAGES.**<br>
+**4 the code are CC0**<br>
+<br>
+**This script/application should work fine with windows 7 and newer, unsure about older os.**<br>
 
-**This script/application should work fine with windows 7 and newer, unsure about older os.**
-
-**Only use this app if you know what you are doing, some calls eg "get_2d_map_flat" isn't supported in mt 0.4.16 and older.**
-
+**Only use this app if you know what you are doing, some calls eg "get_2d_map_flat" isn't supported in mt 0.4.16 and older.**<br>
+<br>
 This script will simply replace all of this old calls in lua-files, in all sub folders and creating a log about what it finds.
 Only use this with copyes of your stuff, if something goes wrong there are no going back.
-
-
+<br>
+<br>
 Put your files or whole mod/modpack/game in the "Minetest old call update" folder (created in first run).
 As standard you will get a warning about using unknown vbs script, but just ignore it and run.
-
+<br>
 |REPLACE|		WITH|
 |-------|-------|
 |.env:|		minetest.
