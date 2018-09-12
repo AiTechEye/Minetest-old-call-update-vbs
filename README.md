@@ -7,7 +7,7 @@
 
 **This script/application should work fine with windows 7 and newer, unsure about older os.**
 
-**Only use this app if you know what you are doing, some calls eg "get_2d_map_flat" isn't supported in mt 0.4.16 and older
+**Only use this app if you know what you are doing, some calls eg "get_2d_map_flat" isn't supported in mt 0.4.16 and older.**
 
 This script will simply replace all of this old calls in lua-files, in all sub folders and creating a log about what it finds.
 Only use this with copyes of your stuff, if something goes wrong there are no going back.
