@@ -1,4 +1,4 @@
-# Minetest old call update V3
+# Minetest old lua call update V3
 ## This is not a minetest mod
 **1: USE OF YOUR OWN RISK**
 **2: THE SCRIPT/APPLICATION IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.**
