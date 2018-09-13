@@ -19,19 +19,21 @@ sub folder(p)
 	next
 end sub
 sub file(a)
-	f=sf.OpenTextFile(a.path,1).readall
-	cfiles=cfiles+1
-	changes=""
-	f2=f
-	for i=0 to ubound(rep) step 2
-		if InStr(f,rep(i))>0 then
-			changes=changes & rep(i) & "  "
-			f2=Replace(f2,rep(i),rep(i+1))
+	if not sf.OpenTextFile(a.path,1).AtEndOfStream then
+		f=sf.OpenTextFile(a.path,1).readall
+		cfiles=cfiles+1
+		changes=""
+		f2=f
+		for i=0 to ubound(rep) step 2
+			if InStr(f,rep(i))>0 then
+				changes=changes & rep(i) & "  "
+				f2=Replace(f2,rep(i),rep(i+1))
+			end if
+		next
+		if changes <> "" then
+			sf.CreateTextFile(a).writeline(f2)
+			text=text & right(a,len(a)-len(pp)-1) & " " & changes & vbCrLf
 		end if
-	next
-	if changes <> "" then
-		sf.CreateTextFile(a).writeline(f2)
-		text=text & right(a,len(a)-len(pp)-1) & " " & changes & vbCrLf
 	end if
 end sub
 
